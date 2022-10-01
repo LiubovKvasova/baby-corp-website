@@ -1,0 +1,18 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.navbar {
+  box-shadow: 0px 3px 30px #0000002c;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+#navbarNav a {
+  font-weight: 500;
+}
