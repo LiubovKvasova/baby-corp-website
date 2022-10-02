@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* Navbar */
 .navbar {
   box-shadow: 0px 3px 30px #0000002c;
 }
@@ -15,4 +16,95 @@
 
 #navbarNav a {
   font-weight: 500;
+}
+
+.btn {
+  margin-left: 1vw;
+} 
+
+/* Main */
+.main-title {
+  padding: 15% 0%;
+}
+
+.main-title h1 {
+  font-weight: 900;
+  font-size: 8vw;
+}
+
+.main-title h2 {
+  padding: 2% 0% 0% 1%;
+}
+
+.main-img {
+  padding: 3% 5% 0%;
+}
+
+.big-boss {
+  width: 25vw;
+}
+
+/* About */
+.about {
+  padding-top: 10vh;  
+}
+
+.about h3 {
+  margin-top: 5%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 3vw;
+}
+
+.about p {
+  text-align: center;
+  font-size: 1vw;
+}
+
+.about-text {
+  padding: 2% 5% ;
+}
+
+.about-text p {
+  text-align: left;
+  margin: 1vh;
+  font-size: 1vw;
+}
+
+.about .baby-corp {
+  padding: 5%;
+  /* width: 40vw; */
+  width: 100%;
+  height: auto;
+}
+
+
+
+@media (max-width: 575.98px) {
+  .main-title {
+    padding: 10% 5%;
+  }
+
+  .main-title h1 {
+    font-weight: 700;
+    font-size: 15vw;
+  }
+
+  .main-img {
+    padding: 0% 25% 0%;
+  }
+
+  .big-boss {
+    display: none;
+  }
+
+  .big-boss-sm {
+    width: 50vw;
+  }
+}
+
+@media (min-width: 576px) {
+  .big-boss-sm {
+    display: none;
+  }
 }

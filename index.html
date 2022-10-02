@@ -10,9 +10,9 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar" tabindex="0">
   
-  <nav class="navbar navbar-expand-lg bg-light">
+  <nav class="navbar navbar-expand-lg bg-white sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#">Baby Corp</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,25 +21,53 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About us</a>
+            <a class="nav-link" href="#about">About us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Team</a>
+            <a class="nav-link" href="#team">Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Stories</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"></a>
-          </li>
+            <a class="nav-link" href="#stories">Stories</a>
         </ul>
-        <a class="btn btn-outline-primary" href="#">Contact us</a>
+        <a class="btn btn-outline-dark" href="#">Contact us</a>
       </div>
     </div>
   </nav>
+
+  <section class="main">
+    <div class="container" id="home">
+      <div class="row">
+        <div class="col-sm-7 main-title">
+          <h1>Baby Corp</h1>
+          <h2>Because everyone should love babies</h2>
+        </div>
+        <div class="col-sm-5 main-img">
+          <img class="big-boss" src="./image/boss.png" alt="Big Baby Boss" />
+          <img class="big-boss-sm" src="./image/boss-sm.webp" alt="Big Baby Boss" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container" id="about">
+      <h3>About us</h3>
+      <p>Baby Corp is a large corporation located in a heavenly realm.</p>
+      <div class="row">
+        <div class="col-sm-5 about-img">
+          <img class="baby-corp" src="./image/baby-corp.png" alt="Baby Corp" />
+        </div>
+        <div class="col-sm-7 about-text">
+          <p>Baby Corp is responsible for the creation of all babies and their primary goal is to make sure that babies are the most loved creatures on earth.</p>
+          <p>Baby Corp possesses a giant, self-editing pie chart that shows how all the love in the world is divided up. The sections of the pie chart grow and shrink in real time in accordance with the distribution of love on earth.</p>
+          <p>All the babies who come from Baby Corp initially remember it, but lose those memories when their pacifier is taken away.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
