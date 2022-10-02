@@ -11,7 +11,7 @@
 
 .navbar-brand {
   font-weight: 700;
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 #navbarNav a {
@@ -47,38 +47,54 @@
 /* About */
 .about {
   padding-top: 10vh;  
+  font-size: 1.3rem;
+  text-align: center;
 }
 
 .about h3 {
   margin-top: 5%;
-  text-align: center;
   font-weight: 500;
-  font-size: 3vw;
-}
-
-.about p {
-  text-align: center;
-  font-size: 1vw;
+  font-size: 2rem;
 }
 
 .about-text {
-  padding: 2% 5% ;
+  padding: 8% 3% ;
 }
 
 .about-text p {
-  text-align: left;
+  text-align: justify;
   margin: 1vh;
-  font-size: 1vw;
 }
 
 .about .baby-corp {
   padding: 5%;
-  /* width: 40vw; */
   width: 100%;
   height: auto;
 }
 
+.about .about-text-2{
+  padding: 2% 5%;
+}
 
+
+@media (min-width: 1200px) {
+  .about-text p {
+    font-size: 1.6rem;
+  }
+  .about h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .about .about-text-2 {
+    text-align: justify;
+    margin: 1vh;
+  }
+  .about-text {
+    padding: 0% 5%;
+  }
+}
 
 @media (max-width: 575.98px) {
   .main-title {
