@@ -24,7 +24,7 @@
 
 /* Main */
 .main-title {
-  padding: 15% 0%;
+  padding: 15% 1%;
 }
 
 .main-title h1 {
@@ -37,7 +37,7 @@
 }
 
 .main-img {
-  padding: 3% 5% 0%;
+  padding: 3% 6% 0%;
 }
 
 .big-boss {
@@ -76,12 +76,30 @@
   padding: 2% 5%;
 }
 
+/* Team */
+.team h3 {
+  text-align: center;
+  margin: 2%;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.team .carousel-item {
+  background: #000000;
+}
+
+.team .carousel-item img {
+  height: 35rem;
+  object-fit: cover;
+  opacity: 0.5;
+  }
+
 
 @media (min-width: 1200px) {
   .about-text p {
     font-size: 1.6rem;
   }
-  .about h3 {
+  .about h3, .team h3 {
     font-size: 2.5rem;
   }
 }
@@ -94,6 +112,12 @@
   .about-text {
     padding: 0% 5%;
   }
+}
+
+@media (max-width: 767.98px) {
+  .team .carousel-item img {
+    height: 40vh;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -123,4 +147,4 @@
   .big-boss-sm {
     display: none;
   }
-}
+} 
