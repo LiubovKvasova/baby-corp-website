@@ -25,7 +25,7 @@ h3 {
   font-weight: 500;
 }
 
-.btn {
+.navbar .btn {
   margin-left: 1vw;
 } 
 
@@ -104,6 +104,28 @@ h3 {
   object-fit: cover;
 }
 
+/* Footer */
+.footer {
+  margin: 0;
+  text-align: center;
+  background: #f0f0f0;
+}
+
+.footer h3 {
+  padding-top: 3%;
+}
+
+.footer .copyright p {
+  margin-bottom: 0;
+  padding-bottom: 2%;
+}
+
+.footer .bi {
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
 @media (min-width: 1200px) {
   .about-text p {
     font-size: 1.6rem;
@@ -121,6 +143,9 @@ h3 {
   .about-text {
     padding: 0% 5%;
   }
+  .navbar .btn {
+    margin-left: 0;
+  } 
 }
 
 @media (max-width: 767.98px) {
