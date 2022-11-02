@@ -104,6 +104,18 @@ h3 {
   object-fit: cover;
 }
 
+.stories .card:hover .image-gif-preview {
+  display: none;
+}
+
+.stories .card .image-gif {
+  display: none;
+}
+
+.stories .card:hover .image-gif {
+  display: block;
+}
+
 /* Footer */
 .footer {
   margin: 0;
