@@ -1,0 +1,19 @@
+/* Footer */
+.footer {
+  margin-top: auto;
+  text-align: center;
+  background: $color-white-dark;
+
+  .copyright {
+    p {
+      margin-bottom: 0;
+      padding-bottom: 2%;
+    }
+  }
+
+  .bi {
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: $color-black;
+  }
+}

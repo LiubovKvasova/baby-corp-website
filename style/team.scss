@@ -1,0 +1,16 @@
+/* Team */
+.team {
+  .carousel-item {
+    background: $color-black;
+
+    img {
+      height: 35rem;
+      object-fit: cover;
+      opacity: 0.5;
+
+      @media (max-width: $bp-medium) {
+        height: 40vh;
+      }
+    }
+  }
+}

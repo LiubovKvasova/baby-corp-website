@@ -1,0 +1,41 @@
+// Breakpoints
+$bp-largest: 1200;
+$bp-large: 992px;
+$bp-medium: 768px;
+$bp-small: 576px;
+
+//Colors
+$color-black-transparent: #0000002c;
+$color-black-light: #1c1c1c;
+$color-black: #000000;
+$color-gray: rgba(75, 74, 74, 0.334);
+$color-white: #ffffff;
+$color-white-dark:#f0f0f0;
+$color-blue-dark: #12282F;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h3 {
+  margin-bottom: 2%;
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+
+  @media (min-width: $bp-largest) {
+    font-size: 3rem;
+  }
+}
+
+.padding-5 {
+  padding-top: 5%;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

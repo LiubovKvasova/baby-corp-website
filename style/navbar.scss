@@ -1,0 +1,23 @@
+/* Navbar */
+.navbar {
+  box-shadow: 0px 3px 30px $color-black-transparent;
+
+  .btn {
+    margin-left: 1vw;
+
+    @media (max-width: $bp-large) {
+      margin-left: 0;
+    }
+  }
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+#navbarNav {
+  a {
+    font-weight: 500;
+  }
+}

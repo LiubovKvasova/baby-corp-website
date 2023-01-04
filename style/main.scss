@@ -1,0 +1,52 @@
+/* Main */
+.main-page {
+  margin-bottom: 2%;
+}
+
+.main-title {
+  padding: 15% 1%;
+
+  h1 {
+    font-weight: 900;
+    font-size: 8vw;
+
+    @media (max-width: $bp-small) {
+      font-weight: 700;
+      font-size: 15vw;
+    }
+  }
+
+  h2 {
+    padding: 2% 0% 0% 1%;
+  }
+
+  @media (max-width: $bp-small) {
+    padding: 10% 5%;
+  }
+}
+
+.main-img {
+  padding: 3% 6% 0%;
+
+  @media (max-width: $bp-small) {
+    padding: 0% 25% 0%;
+  }
+}
+
+.big-boss {
+  width: 25vw;
+
+  @media (max-width: $bp-small) {
+    display: none;
+  }
+}
+
+.big-boss-sm {
+  @media (max-width: $bp-small) {
+    width: 50vw;
+  }
+
+  @media (min-width: $bp-small) {
+    display: none;
+  }
+}

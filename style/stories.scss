@@ -1,0 +1,30 @@
+/* Stories */
+.stories {
+  .card {
+    height: 30rem;
+    overflow: hidden;
+
+    img {
+      height: 20rem;
+      object-fit: cover;
+    }
+
+    &:hover {
+      .image-gif-preview {
+        display: none;
+      }
+
+      .image-gif {
+        display: block;
+      }
+
+      cursor: pointer;
+      transition: all 0.3s ease;
+      transform: scale(1.05);
+    }
+
+    .image-gif {
+      display: none;
+    }
+  }
+}
