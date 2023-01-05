@@ -19,6 +19,10 @@ $color-blue-dark: #12282F;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h3 {
   margin-bottom: 2%;
   font-weight: 500;
