@@ -1,6 +1,8 @@
 "use strict";
 
 document.addEventListener('DOMContentLoaded', function () {
+  emailjs.init("[EMAIL_JS_ID]");
+
   const form = this.getElementById('form');
   form.addEventListener('submit', formSend);
 
