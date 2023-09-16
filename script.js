@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
           console.log('res=200');
         } else {
           alert('error');
-        form.classList.remove('sending');
+          form.classList.remove('sending');
         }
       });
 
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
       formRemoveError(input);
 
       if (input.classList.contains('email')) {
-        if (emailTest(input)) {
+        if (!emailTest(input)) {
           formAddError(input);
           error++;
         }
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function emailTest(input) {
-    return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+    return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
   }
 });
 

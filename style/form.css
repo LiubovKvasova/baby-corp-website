@@ -1,0 +1,84 @@
+/* Form */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h3 {
+  margin-bottom: 2%;
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+}
+@media (min-width: 1200) {
+  h3 {
+    font-size: 3rem;
+  }
+}
+
+.padding-5 {
+  padding-top: 5%;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#form input {
+  border-radius: 7px;
+  border-width: 1px;
+}
+#form textarea {
+  border-radius: 7px;
+  border-width: 1px;
+  width: 100%;
+}
+#form input.flex {
+  display: flex;
+}
+#form #email {
+  width: 100%;
+}
+#form label {
+  margin-top: 0.5rem;
+}
+#form input.error {
+  box-shadow: 0 0 7px #12282F;
+}
+#form textarea.error {
+  box-shadow: 0 0 7px #12282F;
+}
+
+.modal-header {
+  background-color: #1c1c1c;
+  color: #ffffff;
+}
+
+.modal-footer {
+  background-color: #1c1c1c;
+  color: #ffffff;
+}
+
+.form-body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(75, 74, 74, 0.334) url("./image/baby-dance.gif") center/20rem no-repeat;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sending .form-body::after {
+  opacity: 1;
+  visibility: visible;
+}/*# sourceMappingURL=form.css.map */

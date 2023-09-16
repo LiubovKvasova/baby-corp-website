@@ -1,0 +1,24 @@
+/* Stories */
+.stories .card {
+  height: 30rem;
+  overflow: hidden;
+}
+.stories .card img {
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.stories .card:hover {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(1.05);
+}
+.stories .card:hover .image-gif-preview {
+  display: none;
+}
+.stories .card:hover .image-gif {
+  display: block;
+}
+.stories .card .image-gif {
+  display: none;
+}/*# sourceMappingURL=stories.css.map */

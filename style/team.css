@@ -1,0 +1,47 @@
+/* Team */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h3 {
+  margin-bottom: 2%;
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+}
+@media (min-width: 1200) {
+  h3 {
+    font-size: 3rem;
+  }
+}
+
+.padding-5 {
+  padding-top: 5%;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.team .carousel-item {
+  background: #000000;
+}
+.team .carousel-item img {
+  height: 35rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.5;
+}
+@media (max-width: 768px) {
+  .team .carousel-item img {
+    height: 40vh;
+  }
+}/*# sourceMappingURL=team.css.map */

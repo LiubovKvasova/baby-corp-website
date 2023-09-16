@@ -1,0 +1,73 @@
+/* About */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h3 {
+  margin-bottom: 2%;
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+}
+@media (min-width: 1200) {
+  h3 {
+    font-size: 3rem;
+  }
+}
+
+.padding-5 {
+  padding-top: 5%;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
+  padding-top: 10vh;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.about h3 {
+  margin-bottom: 1%;
+}
+.about .baby-corp {
+  padding: 5%;
+  width: 100%;
+  height: auto;
+}
+.about .about-text-2 {
+  padding: 2% 5%;
+}
+@media (max-width: 992px) {
+  .about .about-text-2 {
+    text-align: justify;
+    margin: 1vh;
+  }
+}
+
+.about-text {
+  padding: 8% 3%;
+}
+.about-text p {
+  text-align: justify;
+  margin: 1vh;
+}
+@media (min-width: 1200) {
+  .about-text p {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 992px) {
+  .about-text {
+    padding: 0% 5%;
+  }
+}/*# sourceMappingURL=about.css.map */

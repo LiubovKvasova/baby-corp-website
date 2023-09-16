@@ -14,6 +14,11 @@ h3 {
   font-size: 2rem;
   text-align: center;
 }
+@media (min-width: 1200) {
+  h3 {
+    font-size: 3rem;
+  }
+}
 
 .padding-5 {
   padding-top: 5%;
@@ -22,12 +27,20 @@ h3 {
 .wrapper {
   min-height: 100vh;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 /* Navbar */
 .navbar {
-  box-shadow: 0px 3px 30px #0000002c;
+  box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.1725490196);
+}
+.navbar .btn {
+  margin-left: 1vw;
+}
+@media (max-width: 992px) {
+  .navbar .btn {
+    margin-left: 0;
+  }
 }
 
 .navbar-brand {
@@ -39,130 +52,177 @@ h3 {
   font-weight: 500;
 }
 
-.navbar .btn {
-  margin-left: 1vw;
-} 
-
 /* Main */
-.main-page{
-margin-bottom: 2%;
+.main-page {
+  margin-bottom: 2%;
 }
 
 .main-title {
   padding: 15% 1%;
 }
-
 .main-title h1 {
   font-weight: 900;
   font-size: 8vw;
 }
-
+@media (max-width: 576px) {
+  .main-title h1 {
+    font-weight: 700;
+    font-size: 15vw;
+  }
+}
 .main-title h2 {
   padding: 2% 0% 0% 1%;
+}
+@media (max-width: 576px) {
+  .main-title {
+    padding: 10% 5%;
+  }
 }
 
 .main-img {
   padding: 3% 6% 0%;
 }
+@media (max-width: 576px) {
+  .main-img {
+    padding: 0% 25% 0%;
+  }
+}
 
 .big-boss {
   width: 25vw;
 }
+@media (max-width: 576px) {
+  .big-boss {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .big-boss-sm {
+    width: 50vw;
+  }
+}
+@media (min-width: 576px) {
+  .big-boss-sm {
+    display: none;
+  }
+}
 
 /* About */
 .about {
-  padding-top: 10vh;  
+  padding-top: 10vh;
   font-size: 1.3rem;
   text-align: center;
 }
-
 .about h3 {
   margin-bottom: 1%;
 }
-
-.about-text {
-  padding: 8% 3% ;
-}
-
-.about-text p {
-  text-align: justify;
-  margin: 1vh;
-}
-
 .about .baby-corp {
   padding: 5%;
   width: 100%;
   height: auto;
 }
-
-.about .about-text-2{
+.about .about-text-2 {
   padding: 2% 5%;
+}
+@media (max-width: 992px) {
+  .about .about-text-2 {
+    text-align: justify;
+    margin: 1vh;
+  }
+}
+
+.about-text {
+  padding: 8% 3%;
+}
+.about-text p {
+  text-align: justify;
+  margin: 1vh;
+}
+@media (min-width: 1200) {
+  .about-text p {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 992px) {
+  .about-text {
+    padding: 0% 5%;
+  }
 }
 
 /* Team */
 .team .carousel-item {
   background: #000000;
 }
-
 .team .carousel-item img {
   height: 35rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   opacity: 0.5;
+}
+@media (max-width: 768px) {
+  .team .carousel-item img {
+    height: 40vh;
   }
-
+}
 
 /* Stories */
 .stories .card {
   height: 30rem;
   overflow: hidden;
 }
-
 .stories .card img {
   height: 20rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-
-.stories .card:hover .image-gif-preview {
-  display: none;
-}
-
-.stories .card .image-gif {
-  display: none;
-}
-
-.stories .card:hover .image-gif {
-  display: block;
-}
-
 .stories .card:hover {
   cursor: pointer;
   transition: all 0.3s ease;
   transform: scale(1.05);
 }
+.stories .card:hover .image-gif-preview {
+  display: none;
+}
+.stories .card:hover .image-gif {
+  display: block;
+}
+.stories .card .image-gif {
+  display: none;
+}
 
 /* Form */
-#form input, #form textarea {
+#form input {
   border-radius: 7px;
   border-width: 1px;
 }
-
+#form textarea {
+  border-radius: 7px;
+  border-width: 1px;
+  width: 100%;
+}
 #form input.flex {
   display: flex;
 }
-
-#form textarea, #form #email {
+#form #email {
   width: 100%;
 }
-
 #form label {
   margin-top: 0.5rem;
 }
-
-#form input.error, #form textarea.error {
-  box-shadow: 0 0 7px rgb(18, 40, 47);
+#form input.error {
+  box-shadow: 0 0 7px #12282F;
+}
+#form textarea.error {
+  box-shadow: 0 0 7px #12282F;
 }
 
-.modal-header, .modal-footer {
+.modal-header {
+  background-color: #1c1c1c;
+  color: #ffffff;
+}
+
+.modal-footer {
   background-color: #1c1c1c;
   color: #ffffff;
 }
@@ -174,7 +234,7 @@ margin-bottom: 2%;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(75, 74, 74, 0.334) url('./image/baby-dance.gif') center / 20rem no-repeat;
+  background: rgba(75, 74, 74, 0.334) url("./image/baby-dance.gif") center/20rem no-repeat;
   opacity: 0;
   visibility: hidden;
 }
@@ -182,7 +242,7 @@ margin-bottom: 2%;
 .sending .form-body::after {
   opacity: 1;
   visibility: visible;
-} 
+}
 
 /* Footer */
 .footer {
@@ -190,71 +250,12 @@ margin-bottom: 2%;
   text-align: center;
   background: #f0f0f0;
 }
-
 .footer .copyright p {
   margin-bottom: 0;
   padding-bottom: 2%;
 }
-
 .footer .bi {
   margin: 1rem;
   font-size: 1.5rem;
   color: #000000;
-}
-
-@media (min-width: 1200px) {
-  .about-text p {
-    font-size: 1.6rem;
-  }
-  h3 {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .about .about-text-2 {
-    text-align: justify;
-    margin: 1vh;
-  }
-  .about-text {
-    padding: 0% 5%;
-  }
-  .navbar .btn {
-    margin-left: 0;
-  } 
-}
-
-@media (max-width: 767.98px) {
-  .team .carousel-item img {
-    height: 40vh;
-    }
-}
-
-@media (max-width: 575.98px) {
-  .main-title {
-    padding: 10% 5%;
-  }
-
-  .main-title h1 {
-    font-weight: 700;
-    font-size: 15vw;
-  }
-
-  .main-img {
-    padding: 0% 25% 0%;
-  }
-
-  .big-boss {
-    display: none;
-  }
-
-  .big-boss-sm {
-    width: 50vw;
-  }
-}
-
-@media (min-width: 576px) {
-  .big-boss-sm {
-    display: none;
-  }
-} 
+}/*# sourceMappingURL=style.css.map */
