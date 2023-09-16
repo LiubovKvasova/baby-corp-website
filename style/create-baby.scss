@@ -1,0 +1,24 @@
+/* Create a baby*/
+@import './base.scss';
+
+.create-baby{
+  .carousel-name{
+    font-size: 5rem;
+
+    @media (min-width: $bp-largest) {
+      font-size: 6rem;
+    }
+
+    @media (max-width: $bp-large) {
+      font-size: 4rem;
+    }
+  }
+  .carousel-caption{
+    padding-bottom: 8rem;
+    font-size: 2rem;
+  }
+  img{
+    filter: brightness(50%);
+  }
+}
+

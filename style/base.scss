@@ -1,5 +1,5 @@
 // Breakpoints
-$bp-largest: 1200;
+$bp-largest: 1200px;
 $bp-large: 992px;
 $bp-medium: 768px;
 $bp-small: 576px;
@@ -26,7 +26,7 @@ html {
 h3 {
   margin-bottom: 2%;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
 
   @media (min-width: $bp-largest) {
